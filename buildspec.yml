@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - dotnet publish -c Release -o ./app/ AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
-       - cp Procfile ./app/Procfile
+      - cp Procfile ./app/Procfile
 
 artifacts:
   base-directory: app
